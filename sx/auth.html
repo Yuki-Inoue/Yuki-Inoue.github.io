@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Result</title>
+    <script>
+      function setAccessToken() {
+        document.getElementById("access-token").innerHTML = location.hash.match(new RegExp("access_token=\([^&]*\)"))[1];
+      }
+    </script>
+  </head>
+  <body onLoad="setAccessToken()">
+    <div id="access-token"></div>
+  </body>
+</html>
